@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Diary</title>
+    <base href="/api/app/"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <button id="backBtn">← Back</button>
+            <h1 id="appTitle">My Memories</h1>
+        </div>
+        <p id="pageTitle">All Albums</p>
+    </header>
+
+    <div class="controls">
+        <div class="search-part">
+            <span>🔍</span>
+            <input type="text" id="searchInput" placeholder="Search memories...">
+        </div>
+        
+        <div class="buttons">
+            <button id="btnGrid" class="active">Grid</button>
+            <button id="btnMap">Map</button>
+        </div>
+    </div>
+
+    <div id="uploadZone" class="upload-box">
+        <label for="fileInput" class="choose-btn">📷 Pick Photo</label>
+        <input type="file" id="fileInput" accept=".jpg, .jpeg, .png">
+        <span id="fileNameDisplay"></span>
+        
+        <input type="text" id="captionInput" placeholder="Caption">
+        <input type="text" id="folderInput" placeholder="Folder Name">
+        <datalist id="folderList"></datalist>
+        <button id="btnUpload" class="action-btn">Upload</button>
+    </div>
+
+    <div class="login-status">
+        <span id="userInfo">Loading...</span>
+        <a id="loginLink" href="#">Login</a>
+        <a id="logoutLink" href="#" style="display:none;">Logout</a>
+    </div>
+
+    <div id="status"></div>
+    
+    <div id="appGrid" class="grid"></div>
+    <div id="mapContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

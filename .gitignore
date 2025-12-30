@@ -1,0 +1,72 @@
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# azure
+bin
+obj
+appsettings.json
+local.settings.json
+__blobstorage__
+__queuestorage__
+__azurite_db*__.json
+.python_packages
+
+# environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# logs
+*.log
+pip-log.txt
+*.sqlite3
+
+# testing
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# editors
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# frontend
+node_modules/
+npm-debug.log
+yarn-error.log
